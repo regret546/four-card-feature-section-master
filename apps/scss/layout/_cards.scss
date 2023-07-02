@@ -1,0 +1,22 @@
+.cards {
+  display: grid;
+  padding-inline: 1.5rem;
+  gap: 1rem;
+
+  &__header {
+    display: grid;
+    gap: 1rem;
+    h1 {
+      font-weight: var(--fw--regular);
+      span {
+        color: var(--clr--very-dark-blue);
+        font-weight: var(--fw--very-bold);
+      }
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 1rem;
+  }
+}
