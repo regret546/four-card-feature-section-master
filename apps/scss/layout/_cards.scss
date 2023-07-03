@@ -1,11 +1,13 @@
 .cards {
   display: grid;
-  padding-inline: 1.5rem;
   gap: 1rem;
+  margin: 2rem 1.5rem;
 
   &__header {
+    max-width: 500px;
     display: grid;
     gap: 1rem;
+    padding: 2rem 1rem;
     h1 {
       font-weight: var(--fw--regular);
       span {
@@ -16,7 +18,42 @@
   }
 
   &__info {
+    max-width: 500px;
     display: grid;
+    place-items: center;
     gap: 1rem;
+    text-align: left;
+    padding: 1rem 0;
+
+    div {
+      width: 100%;
+      display: grid;
+      gap: 1rem;
+      padding: 1.5rem 1rem;
+      border-radius: 0.2rem;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+      h2 {
+        color: var(--clr--very-dark-blue);
+      }
+      img {
+        margin-top: 1.5rem;
+        margin-left: auto;
+      }
+    }
+
+    div:nth-of-type(1) {
+      border-top: 3px solid var(--clr--cyan);
+    }
+    div:nth-of-type(2) {
+      border-top: 3px solid var(--clr--red);
+    }
+    div:nth-of-type(3) {
+      border-top: 3px solid var(--clr--orange);
+    }
+    div:nth-of-type(4) {
+      border-top: 3px solid var(--clr--blue);
+    }
   }
 }

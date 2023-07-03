@@ -105,12 +105,14 @@ body {
 
 .cards {
   display: grid;
-  padding-inline: 1.5rem;
   gap: 1rem;
+  margin: 2rem 1.5rem;
 }
 .cards__header {
+  max-width: 500px;
   display: grid;
   gap: 1rem;
+  padding: 2rem 1rem;
 }
 .cards__header h1 {
   font-weight: var(--fw--regular);
@@ -120,6 +122,38 @@ body {
   font-weight: var(--fw--very-bold);
 }
 .cards__info {
+  max-width: 500px;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  text-align: left;
+  padding: 1rem 0;
+}
+.cards__info div {
+  width: 100%;
   display: grid;
   gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.cards__info div h2 {
+  color: var(--clr--very-dark-blue);
+}
+.cards__info div img {
+  margin-top: 1.5rem;
+  margin-left: auto;
+}
+.cards__info div:nth-of-type(1) {
+  border-top: 3px solid var(--clr--cyan);
+}
+.cards__info div:nth-of-type(2) {
+  border-top: 3px solid var(--clr--red);
+}
+.cards__info div:nth-of-type(3) {
+  border-top: 3px solid var(--clr--orange);
+}
+.cards__info div:nth-of-type(4) {
+  border-top: 3px solid var(--clr--blue);
 }/*# sourceMappingURL=style.css.map */
