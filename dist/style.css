@@ -165,6 +165,12 @@ body {
     display: grid;
     place-items: center;
   }
+  .cards__header h1 {
+    font-size: 2rem;
+  }
+  .cards__header p {
+    font-size: 1.2rem;
+  }
   .cards__info {
     max-width: 1200px;
     display: grid;
